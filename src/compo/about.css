@@ -1,0 +1,51 @@
+
+    .about_img{
+        height: 40vw;
+        margin: 8vw;
+    }
+
+.about_sec{
+    display: flex;
+    justify-content: space-between;
+}
+.about_des{
+    font-family: Kollektif;
+
+    height: 40vw;
+    width: 58vw;
+    margin: 7.6vw;
+    text-align: center;
+ 
+}
+.about_des h2{
+    padding-bottom: 2vw;
+    color: aliceblue;
+}
+.about_des_h1{
+    font-weight: 600;
+    font-size: 3vw;
+    padding-bottom: 2vw;
+    color: crimson;
+}
+.about_des_h1::after {
+   
+    content: "";
+    display: block;
+    height: 0.3vw;
+    width: 100%;
+    background-color: crimson;
+    box-shadow: 4px 4px 30px white;
+  }
+  
+
+.about_des p{
+font-weight: 600;
+color: aliceblue;
+font-size: 1.4vw;
+margin-bottom: 3vw;
+font-family: Kollektif;
+}
+
+.about_btn{
+    margin-left: 1.4vw;
+}

@@ -1,0 +1,23 @@
+.hero-buttons{
+    margin-top: 5vw;
+}
+.hero_btn{
+    height: 4vw;
+    width: auto;
+    color: crimson;
+    border: .2vw solid transparent;
+    margin-right: 3vw;
+    font-size: 2.5vw;
+    font-family: Kollektif;
+    font-weight: 600;
+    padding: .5vw 1vw 1vw 1vw;
+    border-radius: 4vw;
+    box-shadow: 4px 4px 30px crimson;
+    text-decoration: none;
+}
+.socialIcon{
+    color: antiquewhite;
+    font-size: 2.33vw;
+    margin-right: 2vw;
+    scale: 1;
+}

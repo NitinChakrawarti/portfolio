@@ -1,0 +1,51 @@
+.hire-me{
+    font-family: Kollektif;
+    color: aliceblue;
+    text-align: center;
+    padding-bottom: 2vw;
+}
+.hire-me_h1{
+    font-size: 5vw;
+}
+.hire-me_h1::after {
+   margin-left: 30vw;
+    content: "";
+    display: block;
+    height: 0.3vw;
+    width: 40%;
+    background-color: crimson;
+    box-shadow: 4px 4px 30px white;
+  }
+
+ input {
+    background-color: black;
+    border: .2vw solid aliceblue;
+    border-radius: 4vw;
+
+  }
+   input:focus{
+    outline: none;
+  } 
+  .form_entity{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+  }
+
+  .form_btn{
+    height: 2.7vw;
+    margin: 2vw;
+    text-align: center;
+    width: 28%;
+    font-size: 2vw;
+    font-family: Kollektif;
+    color: aliceblue;
+  }
+  .form_btn:hover{
+    box-shadow: 6px 6px 50px crimson;
+  }
+  .form_entity button{
+    margin-top: 2vw;
+  }
