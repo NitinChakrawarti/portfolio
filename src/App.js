@@ -1,5 +1,6 @@
 import React from 'react'
 import './App.css'
+import './responsive.css'
 import Portfolio from './portfolio'
 const App = () => {
   return (

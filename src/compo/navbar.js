@@ -13,8 +13,11 @@ const Navbar = () => {
     <div className="navbar" >
       <div className="portfolio">
         <h2>Portfolio</h2>
+        <a href=""> <i className="fa-solid fa-bars"></i></a>
       </div>
-      <div className="sections">{NavbarApi.map(listItem)}</div>
+      <div className="sections">{NavbarApi.map(listItem)}
+     </div>
+   
     </div>
   );
 };

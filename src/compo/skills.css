@@ -1,80 +1,73 @@
-
-
-.skills_cs{
-width: 48%;
+.skills_cs {
+  width: 48%;
 }
-.skills h1{
-    text-align: center;
+.skills h1 {
+  text-align: center;
 }
-.softskills{
-    font-family: Kollektif;
-    color: aliceblue;
-    width: 10vw;
-    height: 10vw;
-    border: .4vw solid aliceblue;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 4px 3px 30px crimson;
-    font-size: 1.2vw;
-    margin-right: 5vw;
-    margin-bottom: 2vw;
-    text-align: center;
+.softskills {
+  font-family: Kollektif;
+  color: aliceblue;
+  width: 10vw;
+  height: 10vw;
+  border: 0.4vw solid aliceblue;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 4px 3px 30px crimson;
+  font-size: 1.2vw;
+  margin-right: 5vw;
+  margin-bottom: 2vw;
+  text-align: center;
 }
-.skills_cs{
-   
-    width: 48%;
-    padding: 6vw;
-    font-family: Kollektif;
-    color: aliceblue;
-
+.skills_cs {
+  width: 48%;
+  padding: 6vw;
+  font-family: Kollektif;
+  color: aliceblue;
 }
 .skills_cs h2 {
-    font-size: 2vw;
+  font-size: 2vw;
 }
 
-
-.skills_soft{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: flex-end;
-    width: 48%;
-    padding: 6vw;
+.skills_soft {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+  width: 48%;
+  padding: 6vw;
 }
 
-.skills-body{
-    display: flex;
-    justify-content: space-evenly;
+.skills-body {
+  display: flex;
+  justify-content: space-evenly;
 }
-.progress-bar{
-    margin: 1vw 0 1vw 0;
-    height: .8vw;
-    width: 36vw;
-    background-color: grey;
-    border-radius: 3vw;
-
+.progress-bar {
+  margin: 1vw 0 1vw 0;
+  height: 0.8vw;
+  width: 36vw;
+  background-color: grey;
+  border-radius: 3vw;
 }
-.progress-bar div{
-    height: .8vw;
-    background-color: brown;
-    border-radius: 3vw;
+.progress-bar div {
+  height: 0.8vw;
+  background-color: brown;
+  border-radius: 3vw;
 }
 
 .progress-bar div span {
-    height: 2vw;
-    width: 2vw;
-    font-size: .8vw;
-    border-radius: 1vw;
-    background-color: aliceblue;
-    justify-content: center;
-    display: flex;
-    align-items: center;
-    color: black;
-    float: right;
-    margin-top: -10px;
-    margin-right: -20px;
-    font-weight: 600;
-    
+  height: 2vw;
+  width: 2vw;
+  font-size: 0.8vw;
+  border-radius: 1vw;
+  background-color: aliceblue;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  color: black;
+  float: right;
+  margin-top: -10px;
+  margin-right: -20px;
+  font-weight: 600;
 }

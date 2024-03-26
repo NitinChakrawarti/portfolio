@@ -1,0 +1,39 @@
+@media only screen and (max-width: 470px) {
+  .hire-me{
+    font-family: Kollektif;
+    color: aliceblue;
+    text-align: center;
+    padding-bottom: 2vw;
+    align-items: center;
+    margin-bottom: 10vw;
+}
+.hire-me_h1{
+    font-weight: 600;
+    font-size: 8vw;
+    padding-bottom: 2vw;
+    color: crimson;
+}
+ input {
+    background-color: black;
+    border: .2vw solid aliceblue;
+    border-radius: 4vw;
+
+  }
+   input:focus{
+    outline: none;
+  } 
+  
+  .form_btn{
+    height: 6vw;
+    margin: 2vw;
+    text-align: center;
+    width: 50%;
+    font-size: 4vw;
+    font-family: Kollektif;
+    color: aliceblue;
+  }
+ 
+  .form_entity button{
+    margin-top: 2vw;
+  }
+}

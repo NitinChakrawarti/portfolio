@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./hire-me.css";
+import './contactrespon.css';
 import fromApi from "./forminfo";
 
 const Hire_me = () => {

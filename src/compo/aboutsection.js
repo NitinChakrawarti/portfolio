@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import "./about.css";
 import "./hero_btn.css";
+import './aboutrespon.css';
 import About_btn from "./about_btn";
 const Aboutsection = () => {
    

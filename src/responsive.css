@@ -1,0 +1,65 @@
+@media only screen and (max-width: 470px) {
+
+.navbar{
+    display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  
+  z-index: 1;
+    height: 3vw;
+    display: block;
+}
+.portfolio{
+    margin: 3vw 0 0 4vw;
+    font-size: 6vw;
+   display: flex;
+   justify-content: space-between;
+   width: 100%;
+}
+.fa-bars{
+    font-size: 8vw;
+    color: aliceblue;
+    margin: 1vw 10vw 0 0vw;
+    visibility: visible;
+}
+    .sections{
+        visibility: hidden;
+    }
+    .main-page{
+        padding: 7vw 0 0 0 ;
+        display: block;
+        overflow: hidden;
+    
+      }
+.hero-des{
+margin-top:10vw;
+width: 80%;
+text-align: center;
+margin-left: 12%;
+margin-bottom: 20vw;
+translate: -2.5% 150% ;
+}
+.userImage{
+    width: 50vw;
+    border-radius: 50%;
+    box-shadow:  4px 4px 80px crimson ;
+ translate: 46% -115% ;
+  }
+
+
+  .herosection {
+    font-family: Kollektif;
+    overflow: hidden;
+    color: aliceblue;
+    font-size:4vw;
+  
+  }
+  
+
+  /* about section my webpage */
+
+
+}
+

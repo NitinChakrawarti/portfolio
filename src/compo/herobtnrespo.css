@@ -1,0 +1,28 @@
+@media only screen and (max-width: 470px) {
+.hero-buttons{
+    margin-top: 8vw;
+    margin-bottom: 10vw;
+}
+.hero_btn{
+    height: 10vw;
+    width: auto;
+    color: crimson;
+    border: .2vw solid transparent;
+    margin-right: 3vw;
+    font-size: 5vw;
+    font-family: Kollektif;
+    font-weight: 600;
+    padding: .5vw 2vw 1vw 2vw;
+    border-radius: 4vw;
+    box-shadow: 2px 2px 20px crimson;
+    text-decoration: none;
+}
+.socialIcon{
+    color: antiquewhite;
+    font-size: 6vw;
+    margin-left: 6vw;
+    
+}
+
+
+}

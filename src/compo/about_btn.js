@@ -1,6 +1,10 @@
 import React, { useState } from "react";
 
 const Show_more = ({ children }) => {
+  
+  const text = children;
+  const [moreAbout, setAbout] = useState(true);
+
 
     const [moseOver, setMouseOver] = useState(false);
     function herobtn_over() {
@@ -13,11 +17,9 @@ const Show_more = ({ children }) => {
       backgroundColor: moseOver ? "crimson" : "black",
       color: moseOver ? "black" : "crimson",
       border: moseOver ? "black" : "white",
+     
     };
 
-
-  const text = children;
-  const [moreAbout, setAbout] = useState(true);
 
   function aboutClicked() {
     setAbout(!moreAbout);

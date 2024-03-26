@@ -1,29 +1,13 @@
 import React from "react";
 import SkillsApi from "./skillsapi";
 import "./skills.css";
-import Csskill from "./csskills";
+import './skillsrespon.css'
+
+import MotionAnime from "./motionAnime";
 const Skills = () => {
 
   
-  function csSkills(cueskill) {
-
-
-    const myStyle ={
-      backgroundColor:cueskill.colo, 
-      width:cueskill.perce,
-    }
-    
-   
-    return (
-      <>
-        <h2 className="csshillh3">{cueskill.name}</h2>
-        <div className="progress-bar">
-          <div style={myStyle} className={cueskill.name}><span>{cueskill.perce}</span></div>
-        </div>
-      </> 
-    );
-  }
-
+  
   function softSkills(curlele) {
     return <div className="softskills">{curlele}</div>;
   }
@@ -35,13 +19,9 @@ const Skills = () => {
         <div className="skills-body">
 
 
-
-
-          <div className="skills_cs">{Csskill.map(csSkills)}</div>
-
-
-
-
+          
+<MotionAnime />
+         
           <div className="skills_soft">{SkillsApi.map(softSkills)}</div>
         </div>
       </div>

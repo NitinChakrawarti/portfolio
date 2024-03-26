@@ -1,30 +1,31 @@
 const Csskill = [{
     name:"Html",
-    perce:"89%",
+    perce:"89",
     colo:"blue",
+    
 },{
     name:"Css",
-    perce:"70%",
+    perce:"70",
     colo:"yellow",
 },
 {
     name:"JavaScript",
-    perce:"50%",
+    perce:"50",
     colo:"green",
 },
 {
     name:"Java",
-    perce:"45%",
+    perce:"45",
     colo:"grey",
 },
 {
     name:"C",
-    perce:"60%",
+    perce:"60",
     colo:"pink",
 },
 {
     name:"React",
-    perce:"69%",
+    perce:"69",
     colo:"white",
 },];
 
