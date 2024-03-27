@@ -6,20 +6,23 @@ import "./skillsrespon.css";
 import MotionAnime from "./motionAnime";
 const Skills = () => {
   function softSkills(curlele) {
-    return <div className="softskills">{curlele}</div>;
+    return (
+      <>
+        <div className="softentity">
+          <div className="softskills"></div>
+          <h3>{curlele}</h3>
+        </div>
+      </>
+    );
   }
   return (
     <div>
       <div className="skills hire-me">
-        <h1 className="skills_h1 hire-me_h1 about_des_h1">Skills</h1> 
-
-         {/* about_des_h1 */} 
+        <h1 className="skills_h1 hire-me_h1 about_des_h1">Skills</h1>
 
         <h2>Tech Enthusiast & Innovator</h2>
         <div className="skills-body">
           <MotionAnime />
-
-         
 
           <div className="skills_soft">{SkillsApi.map(softSkills)}</div>
         </div>
