@@ -1,48 +1,46 @@
-import React, {useEffect} from 'react'
-
-import { motion, useAnimation } from "framer-motion";
-import { useInView } from "react-intersection-observer";
+import React, { useEffect } from 'react';
+import './skills.css';
+import { motion, useAnimation, AnimatePresence } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
 
 const AnimatedProgressBar = (props) => {
-  const { ref, inview } = useInView()
-  const controls = useAnimation()
-const percentage = props.progress 
+  const { ref, inView } = useInView();
+  const controls = useAnimation();
+  const percentage = props.progress;
+
   useEffect(() => {
-    if (inview) {
-        console.log(percentage)
-        controls.start({
-        width: 'percentage',
+    if (inView) {
+      console.log(percentage);
+      controls.start({
+        width: "90%",
         transition: {
-          duration: 1
-        }
-      })
+          duration: 1,
+        },
+      });
     }
-  }, [controls, inview, percentage])
+  }, [controls, inView, percentage]);
 
   return (
     <>
       <h2 className="csshillh3">{props.skillname}</h2>
       <div className="progress-bar">
-        <motion.div
-        ref={ref}
-        animate={controls}
-        initial={{width:0}}
-        style={{
-            width:'0',
-            height:'100%',
-            backgroundColor:"blue",
-            display:'flex',
-            justifyContent:"end",
-
-        }}
-        >
-          <span>{percentage}%</span>
-
-
+        <AnimatePresence>
+          <motion.div
+            ref={ref}
+            animate={controls}
+            initial={{ width: 0 }}
+            style={{
+              height: '100%',
+              backgroundColor: 'blue',
+              display: 'flex',
+              justifyContent: 'end',
+              border: '1px solid red',
+            }}
+          >
+            <span>{percentage}%</span>
           </motion.div>
-        </div>
-        
-     
+        </AnimatePresence>
+      </div>
     </>
   );
 };
