@@ -12,7 +12,7 @@
     font-family: Kollektif;
 
     height: 40vw;
-    width: 58vw;
+    
     margin: 7.6vw;
     text-align: center;
  
@@ -44,8 +44,9 @@ color: aliceblue;
 font-size: 1.4vw;
 margin-bottom: 3vw;
 font-family: Kollektif;
+overflow: hidden;
 }
 
 .about_btn{
-    margin-left: 1.4vw;
+    margin-left: 2.8vw;
 }

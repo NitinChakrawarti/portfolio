@@ -2,18 +2,20 @@
 
 
     .about_img{
-        height: 70vw;
-        margin: 8vw 0 6vw 9vw;
+        height: 100vw;
+        margin: 0vw 0 1vw 6vw;
     }
 
 
     .about_sec{
         display: flex;
         flex-direction: column;
+        justify-content: space-around;
        align-items: center;
-       margin-bottom: 50vw;
+       margin-bottom: 10vw;
+      
     }
-
+    
     .about_des_h1{
         font-weight: 600;
         font-size: 8vw;
@@ -31,5 +33,10 @@
         font-size: 4vw;
         margin-bottom: 3vw;
         font-family: Kollektif;
+        
+        }
+        .about_btn{
+            margin-left: 1vw;
+            margin-top: 3vw;
         }
 }

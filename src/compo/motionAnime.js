@@ -4,7 +4,7 @@ import AnimatedProgressBar from "./animatedprogressbar";
 // export fuction
 const MotionAnime = () => {
   return (
-    <div>
+   
       <div className="skills_cs">
         {Csskill.map((cueskill, index) => (
           <AnimatedProgressBar
@@ -14,7 +14,7 @@ const MotionAnime = () => {
             colo={cueskill.colo}
           />
         ))}
-      </div>
+      
     </div>
   );
 };

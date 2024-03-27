@@ -1,51 +1,48 @@
 import React, { useState } from "react";
 
 const Show_more = ({ children }) => {
-  
   const text = children;
   const [moreAbout, setAbout] = useState(true);
 
-
-    const [moseOver, setMouseOver] = useState(false);
-    function herobtn_over() {
-      setMouseOver(true);
-    }
-    function heobtn_leave() {
-      setMouseOver(false);
-    }
-    const style = {
-      backgroundColor: moseOver ? "crimson" : "black",
-      color: moseOver ? "black" : "crimson",
-      border: moseOver ? "black" : "white",
-     
-    };
-
+  const [moseOver, setMouseOver] = useState(false);
+  function herobtn_over() {
+    setMouseOver(true);
+  }
+  function heobtn_leave() {
+    setMouseOver(false);
+  }
+  const style = {
+    backgroundColor: moseOver ? "crimson" : "black",
+    color: moseOver ? "black" : "crimson",
+    border: moseOver ? "black" : "white",
+  };
 
   function aboutClicked() {
     setAbout(!moreAbout);
-    
   }
 
   return (
     <>
-      <p>{moreAbout? text.slice(0, 250) : text}</p>
-      <button
-        className="about_btn hero_btn"
-        style={style}
-        onMouseOver={herobtn_over}
-        onMouseLeave={heobtn_leave}
-        onClick={aboutClicked}
-      >
+      <div className="about_des" style={{height:moreAbout? '8vh' :'40vh'}}>
+        <h1 className="about_des_h1">About Me</h1>
+        <h2>Let me Introduce Myself</h2>
 
-{moreAbout ? "Show More" : "Show Less"}
-      </button>
+        <p>{moreAbout ? text.slice(0, 250) : text}</p>
+        <button
+          className="about_btn hero_btn"
+          style={style}
+          onMouseOver={herobtn_over}
+          onMouseLeave={heobtn_leave}
+          onClick={aboutClicked}
+        >
+          {moreAbout ? "Show More" : "Show Less"}
+        </button>
+      </div>
     </>
   );
 };
 
 const About_btn = () => {
-
-
   return (
     <div>
       <Show_more>
@@ -61,7 +58,6 @@ const About_btn = () => {
         tech community. I thrive in collaborative environments and am always
         eager to learn from and share knowledge with fellow enthusiasts
       </Show_more>
-      
     </div>
   );
 };

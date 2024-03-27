@@ -1,7 +1,31 @@
 @media only screen and (max-width: 470px) {
 .skills{
 
-margin-top: 10vw;
+margin-top: 50vw;
 }
+.skills-body {
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+   margin-left: 5vw;
+  }
+
 }
 
+
+.softskills {
+    font-family: Kollektif;
+    color: aliceblue;
+    width: 30vw;
+    height: 30vw;
+    border: 0.4vw solid aliceblue;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 4px 3px 30px crimson;
+    font-size: 1.2vw;
+    margin-right: 5vw;
+    margin-bottom: 2vw;
+    text-align: center;
+  }

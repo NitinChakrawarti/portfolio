@@ -15,12 +15,8 @@ const Aboutsection = () => {
           className="about_img"
         />
       </div>
-      <div className="about_des">
-        <h1 className="about_des_h1">About Me</h1>
-        <h2>Let me Introduce Myself</h2>
-        <About_btn />
- 
-      </div>
+      <About_btn />
+      
     </div>
   );
 };

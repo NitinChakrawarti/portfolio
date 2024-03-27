@@ -29,23 +29,25 @@
     }
     .main-page{
         padding: 7vw 0 0 0 ;
-        display: block;
+        display: flex;
         overflow: hidden;
+        flex-direction: column-reverse;
     
       }
 .hero-des{
-margin-top:10vw;
+margin: 5vw 0 8vw 10vw;
 width: 80%;
 text-align: center;
-margin-left: 12%;
+
 margin-bottom: 20vw;
-translate: -2.5% 150% ;
+
 }
 .userImage{
     width: 50vw;
     border-radius: 50%;
     box-shadow:  4px 4px 80px crimson ;
- translate: 46% -115% ;
+    margin: 8vw 0 8vw 25vw;
+ 
   }
 
 

@@ -3,6 +3,7 @@
 }
 .skills h1 {
   text-align: center;
+  color-interpolation-filters: crimson;
 }
 .softskills {
   font-family: Kollektif;

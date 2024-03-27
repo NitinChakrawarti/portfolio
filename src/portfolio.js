@@ -13,6 +13,9 @@ const Portfolio = () => {
         <Navbar />
         <Herosection />
       </div>
+      <div id="about">
+        <Aboutsection />
+      </div>
       
       <div id="skills">
         <Skills />
@@ -23,9 +26,7 @@ const Portfolio = () => {
       <div id="contact">
         <Hire_me />
       </div>
-      <div id="about">
-        <Aboutsection />
-      </div>
+      
     </div>
   );
 };
