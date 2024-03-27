@@ -31,7 +31,7 @@ const AnimatedProgressBar = (props) => {
             initial={{ width: 0 }}
             style={{
               height: '100%',
-              backgroundColor: 'blue',
+              backgroundColor: props.colo,
               display: 'flex',
               justifyContent: 'end',
               border: '1px solid red',
