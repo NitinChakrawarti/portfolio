@@ -8,7 +8,7 @@ const MotionAnime = () => {
       <div className="skills_cs">
         {Csskill.map((cueskill, index) => (
           <AnimatedProgressBar
-          key={index}
+            key={index}
             progress={cueskill.perce}
             skillname={cueskill.name}
             colo={cueskill.colo}
