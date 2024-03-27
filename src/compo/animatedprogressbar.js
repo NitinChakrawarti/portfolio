@@ -12,7 +12,7 @@ const AnimatedProgressBar = (props) => {
     if (inView) {
       console.log(percentage);
       controls.start({
-        width: "90%",
+        width: `${props.progress}%`,
         transition: {
           duration: 1,
         },
