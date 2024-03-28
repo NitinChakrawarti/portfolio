@@ -31,13 +31,14 @@
 }
 .skills_cs h2 {
   font-size: 2vw;
+  text-align: start;
 }
 
 .skills_soft {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
- margin-left: 9vw;
+  margin-left: 9vw;
   padding: 3vw;
 }
 
@@ -53,8 +54,7 @@
   border-radius: 3vw;
 }
 .progress-bar div {
-  height: 0.8vw;
-  background-color: brown;
+  
   border-radius: 3vw;
 }
 
@@ -71,5 +71,5 @@
   float: right;
   margin-top: -10px;
   margin-right: -20px;
-  font-weight: 600;
+  font-weight: 700;
 }

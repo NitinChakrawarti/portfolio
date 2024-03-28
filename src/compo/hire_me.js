@@ -4,15 +4,22 @@ import './contactrespon.css';
 import fromApi from "./forminfo";
 
 const Hire_me = () => {
-  function formEle(curElee) {
+  function formEle(curElee, index) {
     return (
       <input
-        type={curElee.type}
+        type={curElee.type} key={index}
         placeholder={curElee.placeholder}
         className="form_btn"
       />
     );
   }
+
+  function submitclicked (event) {
+   
+    // Handle the form data
+    event.preventDefault();
+};
+
   const [moseOver, setMouseOver] = useState(false);
   function herobtn_over() {
     setMouseOver(true);
@@ -37,6 +44,7 @@ const Hire_me = () => {
             style={style}
             onMouseOver={herobtn_over}
             onMouseLeave={heobtn_leave}
+            onClick={submitclicked}
           >
             Submit
           </button>

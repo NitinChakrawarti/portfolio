@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import './skills.css';
+import './skilllsresponsive.css';
 import { motion, useAnimation, AnimatePresence } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
@@ -10,7 +11,7 @@ const AnimatedProgressBar = (props) => {
 
   useEffect(() => {
     if (inView) {
-      console.log(percentage);
+
       controls.start({
         width: `${props.progress}%`,
         transition: {

@@ -1,0 +1,36 @@
+@media only screen and (max-width: 470px) {
+    .progress-bar {
+        margin: 1vw 0 1vw 0;
+        height: 3vw;
+        width:100%;
+        background-color: aliceblue;
+        border-radius: 3vw;
+      }
+      .skills_cs {
+        width: 80%;
+        padding: 10vw;
+        font-family: Kollektif;
+        color: aliceblue;
+      }
+      .skills_cs h2 {
+        font-size: 6vw;
+        text-align: start;
+      }
+      .progress-bar div span {
+        height: 7vw;
+        width: 7vw;
+        font-size: 3vw;
+        border-radius: 4vw;
+        background-color: aliceblue;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        color: black;
+        float: right;
+        margin-top: -8px;
+        margin-right: -15px;
+        font-weight: 700;
+      }
+      
+
+}

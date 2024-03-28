@@ -1,67 +1,82 @@
 @media only screen and (max-width: 470px) {
-
-.navbar{
-    display: flex;
-  justify-content: space-evenly;
-  width: 100%;
-  position: fixed;
-  top: 0;
-  
-  z-index: 1;
-    height: 3vw;
-    display: block;
-}
-.portfolio{
-    margin: 3vw 0 0 4vw;
+  .portfolio {
+    margin: 0vw 0 0 4vw;
+    padding-top: 3vw;
     font-size: 6vw;
-   display: flex;
-   justify-content: space-between;
-   width: 100%;
-}
-.fa-bars{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  
+  }
+  .navbar {
+    display: block;
+    justify-content: space-around;
+    width: 100%;
+    position: fixed;
+    top: 0;
+   
+    background-color:transparent; 
+
+  }
+
+  .sections {
+    display:flex;
+    justify-content:flex-start;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    height: 100%;
+    position: fixed;
+    background-color: rgba(0, 0, 0, .8);
+    backdrop-filter: blur(2px);
+    padding-top: 30vw;
+  }
+  .navbarListItem{
+    background-color: transparent;
+    border-radius: 25%;
+    color: aliceblue;
+    font-size: 10vw;
+    margin-bottom: 8vw;
+  }
+ 
+  .fa-bars {
     font-size: 8vw;
     color: aliceblue;
     margin: 1vw 10vw 0 0vw;
     visibility: visible;
-}
-    .sections{
-        visibility: hidden;
-    }
-    .main-page{
-        padding: 7vw 0 0 0 ;
-        display: flex;
-        overflow: hidden;
-        flex-direction: column-reverse;
-    
-      }
-.hero-des{
-margin: 5vw 0 8vw 10vw;
-width: 80%;
-text-align: center;
-
-margin-bottom: 20vw;
-
-}
-.userImage{
-    width: 50vw;
-    border-radius: 50%;
-    box-shadow:  4px 4px 80px crimson ;
-    margin: 8vw 0 8vw 25vw;
- 
   }
 
+
+  /* main page styling  */
+
+
+
+  .main-page {
+    padding: 7vw 0 0 0;
+    display: flex;
+    
+    flex-direction: column-reverse;
+  }
+  .hero-des {
+    margin: 5vw 0 8vw 10vw;
+    width: 80%;
+    text-align: center;
+
+    margin-bottom: 20vw;
+  }
+  .userImage {
+    width: 50vw;
+    border-radius: 50%;
+    box-shadow: 4px 4px 80px crimson;
+    margin: 8vw 0 8vw 25vw;
+  }
 
   .herosection {
     font-family: Kollektif;
     overflow: hidden;
     color: aliceblue;
-    font-size:4vw;
-  
+    font-size: 4vw;
   }
-  
 
-  /* about section my webpage */
-
-
+ 
 }
-

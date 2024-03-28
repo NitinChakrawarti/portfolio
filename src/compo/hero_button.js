@@ -25,13 +25,13 @@ const Hero_button = () => {
         className="hero_btn"
         onMouseOver={herobtn_over}
         onMouseLeave={heobtn_leave}
-        // onClick={downloadFile}
+      
       > Download CV </button></a> 
      
       
-      <a href="https://www.linkedin.com/in/nitinchakrawarti" className="socialIcon" target="_blank"><i class="fa-brands fa-linkedin-in"  ></i></a>
-      <a href="https://github.com/NitinChakrawarti" className="socialIcon" target="_blank"><i class="fa-brands fa-github"></i></a>
-      <a href="https://x.com/nitinchakarawar?t=ZIOZ_BNaKUPkN4bVzj9bHw&s=09" className="socialIcon" target="_blank"><i class="fa-solid fa-x"></i></a>
+      <a href="https://www.linkedin.com/in/nitinchakrawarti" className="socialIcon" target="_blank"><i className="fa-brands fa-linkedin-in"  ></i></a>
+      <a href="https://github.com/NitinChakrawarti" className="socialIcon" target="_blank"><i className="fa-brands fa-github"></i></a>
+      <a href="https://x.com/nitinchakarawar?t=ZIOZ_BNaKUPkN4bVzj9bHw&s=09" className="socialIcon" target="_blank"><i className="fa-solid fa-x"></i></a>
     </div>
   );
 };

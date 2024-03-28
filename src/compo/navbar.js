@@ -1,21 +1,27 @@
-import React from "react";
+import React, { useState } from "react";
 import NavbarApi from "./navbarapi";
 const Navbar = () => {
 
-  function listItem(curEle) {
-    return (
-      <li >
-        <a href={curEle.link} className="navbarListItem">{curEle.name}</a>
-      </li>
-    );
+const [sectionstate, setSectionState] =useState(true);
+
+
+function menuiconclicked(){
+  console.log("button clicked");
+  setSectionState(!sectionstate)
+}
+const sectionStyle={
+  left:sectionstate ?"-100%" :"0%"
+}
+  function listItem(curEle,index) {
+    return <a href={curEle.link} key={index} className="navbarListItem">{curEle.name}</a>;
   }
   return (
     <div className="navbar" >
       <div className="portfolio">
         <h2>Portfolio</h2>
-        <a href=""> <i className="fa-solid fa-bars"></i></a>
+        <i className="fa-solid fa-bars" onClick={menuiconclicked}></i>
       </div>
-      <div className="sections">{NavbarApi.map(listItem)}
+      <div className="sections" style={sectionStyle}>{NavbarApi.map(listItem)}
      </div>
    
     </div>

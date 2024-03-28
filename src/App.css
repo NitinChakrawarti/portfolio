@@ -6,11 +6,9 @@
 .portfolio {
   width: 40%;
   font-weight: 700;
-  
   font-size: 2vw;
   font-weight: 700;
   font-family: Kollektif;
-  
   font-size: 3vw;
   color: crimson;
 }
@@ -19,6 +17,7 @@
   justify-content: space-between;
   width: 55%;
   align-items: center;
+  
 }
 .navbar {
   display: flex;
@@ -27,22 +26,23 @@
   position: fixed;
   top: 0;
   height: 5vw;
-  z-index: 1;
+  
   
 }
 .fa-bars{
   visibility: hidden;
 }
-.sections li {
+.navbarListItem {
   list-style: none;
   text-decoration: none;
   border-bottom: 1vw;
   border-color: transparent;
+  
 }
-li a {
+ a {
   color: aliceblue;  
 }
-.sections li a::after {
+.sections a::after {
   content: "";
   display: block;
   height: 0.3vw;
@@ -53,7 +53,7 @@ li a {
   transition: transform 0.4s ease;
 }
 
-.sections li a:hover::after {
+.sections a:hover::after {
   transform: scale(1);
 }
 .navbarListItem {

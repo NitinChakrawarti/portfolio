@@ -10,7 +10,7 @@ const Hero_textdes = () => {
       </span>
       <span style={{ color: 'aliceblue', fontWeight: 'bold', fontSize:'6vmin' }}>
         <Typewriter
-          words={["Frontend Developer","React Developer"]}
+          words={["Frontend Developer","React Developer","Problem Solver"]}
           loop={false}
           cursor
           cursorStyle="|"

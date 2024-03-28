@@ -5,14 +5,14 @@ import "./skillsrespon.css";
 
 import MotionAnime from "./motionAnime";
 const Skills = () => {
-  function softSkills(curlele) {
+  function softSkills(curlele, index) {
     return (
-      <>
-        <div className="softentity">
+   
+        <div className="softentity" key={index}>
           <div className="softskills"></div>
-          <h3>{curlele}</h3>
+          <h3 >{curlele}</h3>
         </div>
-      </>
+ 
     );
   }
   return (
@@ -23,7 +23,6 @@ const Skills = () => {
         <h2>Tech Enthusiast & Innovator</h2>
         <div className="skills-body">
           <MotionAnime />
-
           <div className="skills_soft">{SkillsApi.map(softSkills)}</div>
         </div>
       </div>

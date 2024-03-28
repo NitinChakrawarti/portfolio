@@ -49,14 +49,14 @@ const About_btn = () => {
         Hey there! I'm Nitin Chakrawarti, a B.tech 1st year student and Frontend
         web Developer. I love turning ideas into functional websites. Passionate
         about creativity and problem-solving, I thrive on crafting seamless user
-        experiencesMy journey in technology began with a curiosity-driven
+        experiences My journey in technology began with a curiosity-driven
         exploration of programming languages and software development. Along the
         way, I've honed my skills in front-end. I'm constantly seeking ways to
-        innovate and elevate the digital experience.Outside of coding, you'll
+        innovate and elevate the digital experience. Outside of coding, you'll
         find me exploring the intersection of technology and design,
         experimenting with new frameworks, or immersing myself in the vibrant
-        tech community. I thrive in collaborative environments and am always
-        eager to learn from and share knowledge with fellow enthusiasts
+        tech community. I thrive in collaborative environments and I am always
+        eager to learn from my fellow enthusiasts.
       </Show_more>
     </div>
   );

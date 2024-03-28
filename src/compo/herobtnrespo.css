@@ -1,4 +1,4 @@
-@media only screen and (max-width: 470px) {
+@media  (max-width: 470px) {
 .hero-buttons{
     margin-top: 8vw;
     margin-bottom:2vw;
@@ -28,6 +28,5 @@
 .hero-des{
     margin-bottom: 4vw;
 }
-
 
 }
