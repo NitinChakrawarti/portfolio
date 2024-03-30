@@ -9,24 +9,18 @@ import Projects from "./compo/projects";
 const Portfolio = () => {
   return (
     <div className="PortBody">
-      <div >
-        <Navbar />
-        <Herosection />
-      </div>
-      <div id="about">
+      <Navbar />
+      <Herosection />
+
+      <div className="projectbody">
         <Aboutsection />
-      </div>
-      
-      <div id="skills">
+
         <Skills />
-      </div>
-      <div id="projects">
+
         <Projects />
-      </div>
-      <div id="contact">
+
         <Hire_me />
       </div>
-      
     </div>
   );
 };

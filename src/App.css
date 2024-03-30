@@ -12,6 +12,9 @@
   font-size: 3vw;
   color: crimson;
 }
+.portfolio h2{
+  height: 100%;
+}
 .sections {
   display: flex;
   justify-content: space-between;
@@ -26,6 +29,7 @@
   position: fixed;
   top: 0;
   height: 5vw;
+  z-index:1;
   
   
 }
@@ -62,10 +66,12 @@
   font-family: Kollektif;
   font-size: 2.3vw;
 }
-
+.projectbody{
+  background-color: transparent;
+}
 /* hero section of website */
 .main-page{
-  margin: 13vw 0 2.7vw 2vw;
+  margin: 10vw 0 2.7vw 2vw;
   
   display:flex;
   justify-content: space-evenly;

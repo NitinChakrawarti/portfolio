@@ -2,7 +2,7 @@ import React from "react";
 import { Typewriter } from "react-simple-typewriter";
 const Hero_textdes = () => {
   return (
-    <div className="herosection" id="home">
+    <div className="herosection" >
       <h3>Myself </h3>
       <h2>Nitin Chakrawarti</h2>
       <span>

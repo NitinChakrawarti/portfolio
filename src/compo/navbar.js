@@ -13,7 +13,7 @@ const sectionStyle={
   left:sectionstate ?"-100%" :"0%"
 }
   function listItem(curEle,index) {
-    return <a href={curEle.link} key={index} className="navbarListItem">{curEle.name}</a>;
+    return <a href={curEle.link} key={index} onClick={menuiconclicked}  className="navbarListItem">{curEle.name}</a>;
   }
   return (
     <div className="navbar" >

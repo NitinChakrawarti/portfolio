@@ -1,76 +1,54 @@
-import React, { useState } from "react";
-import "./hire-me.css";
-import "./contactrespon.css";
+import React from "react";
+import AwesomeSlider from "react-awesome-slider";
+import withAutoplay from "react-awesome-slider/dist/autoplay";
+import "react-awesome-slider/dist/styles.css";
+import "./projects.css";
 import { ProjectApi } from "./projectsApi";
-const delay = 2500;
+
+const AutoplaySlider = withAutoplay(AwesomeSlider);
+
 const Projects = () => {
-  const [index, setIndex] = React.useState(0);
-  const timeoutRef = React.useRef(null);
+  function projectListToshow(curEle, index) {
+    return (
+      <>
+        <div className="projectsDetails slide" key={index}>
+          <h1>{curEle.name}</h1>
+          <p>{curEle.des}</p>
 
-  function resetTimeout() {
-    if (timeoutRef.current) {
-      clearTimeout(timeoutRef.current);
-    }
-  }
-
-  React.useEffect(() => {
-    resetTimeout();
-    timeoutRef.current = setTimeout(
-      () =>
-        setIndex((prevIndex) =>
-          prevIndex === ProjectApi.length - 1 ? 0 : prevIndex + 1
-        ),
-      delay
+          <div className="projects_links">
+            <a
+              href={curEle.repolink}
+              className="fa-regular fa-file-code projectIconLink"
+            ></a>
+            <a
+              href={curEle.livelink}
+              target="_blank"
+              className="fa-solid fa-link projectIconLink" id="contact"
+            ></a>
+          </div>
+        </div>
+      </>
     );
-
-    return () => {
-      resetTimeout();
-    };
-  }, [index]);
+  }
 
   return (
     <div>
-      <div className="projects hire-me ">
-        <h1 className="skills_h1 hire-me_h1 about_des_h1">Projects</h1>
-        <h2>My projects </h2>
-        <div className="project_entity">
-          <div className="slideshow">
-            <div
-              className="slideshowSlider"
-              style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}
-            >
-  
-              {ProjectApi.map((curEle, index) => 
-                    (
-                    <div className="projectsDetails slide" key={index} >
-                      <h1>{curEle.name}</h1>
-                      <p>{curEle.des}</p>
+      <div className="hire-me project_parent " >
+        <h1 className=" project_h1 about_des_h1" >Projects</h1>
 
-                      <div className="projects_links">
-                    
-                      <a href={curEle.repolink} className="fa-regular fa-file-code projectIconLink"></a>
-                      <a href={curEle.livelink} target="_blank" className="fa-solid fa-link projectIconLink"></a>
-                      </div>
-                    </div>
-                    )
-                  )}
-            </div>
-
-            <div className="slideshowDots">
-              {ProjectApi.map((_, idx) => (
-                <div
-                  key={idx}
-                  className={`slideshowDot${index === idx ? " active" : ""}`}
-                  onClick={() => {
-                    setIndex(idx);
-                  }}
-                >
-                  
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
+        <AutoplaySlider
+        style={{
+              height: '100%',
+              backgroundColor:'red',
+             
+            }}
+          className={"autoplayproject"}
+          play={true}
+          cancelOnInteraction={true} // should stop playing on user interaction
+          interval={1000}
+        >
+          {ProjectApi.map(projectListToshow)}
+        </AutoplaySlider>
       </div>
     </div>
   );

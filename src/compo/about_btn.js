@@ -34,6 +34,7 @@ const Show_more = ({ children }) => {
           onMouseOver={herobtn_over}
           onMouseLeave={heobtn_leave}
           onClick={aboutClicked}
+          id="skills"
         >
           {moreAbout ? "Show More" : "Show Less"}
         </button>

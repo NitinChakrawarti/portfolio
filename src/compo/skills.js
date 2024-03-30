@@ -8,7 +8,7 @@ const Skills = () => {
   function softSkills(curlele, index) {
     return (
    
-        <div className="softentity" key={index}>
+        <div className="softentity" key={index} id="projects">
           <div className="softskills"></div>
           <h3 >{curlele}</h3>
         </div>
@@ -17,8 +17,8 @@ const Skills = () => {
   }
   return (
     <div>
-      <div className="skills hire-me">
-        <h1 className="skills_h1 hire-me_h1 about_des_h1">Skills</h1>
+      <div className="skills hire-me" id="skills" >
+        <h1 className="skills_h1 hire-me_h1 about_des_h1" >Skills</h1>
 
         <h2>Tech Enthusiast & Innovator</h2>
         <div className="skills-body">

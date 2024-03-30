@@ -7,7 +7,7 @@ const Aboutsection = () => {
    
 
   return (
-    <div className="about_sec">
+    <div className="about_sec" id="about">
       <div className="about_des_im">
         <img
           src="https://vrajinfosolution.com/wp-content/uploads/2023/04/development.png"
