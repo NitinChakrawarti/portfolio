@@ -20,7 +20,7 @@ const Hero_button = () => {
   return (
     <div className="hero-buttons">
      
-      <a href="https://drive.google.com/file/d/1YM-ye3bVBZ_zda8hTcgLtKm1zjDNPx-I/view?usp=drive_link" target="_blank"> <button
+      <a href="https://www.canva.com/design/DAF_fOURT2g/R_HOXmnoNB8k8X8NF1UEQQ/view?utm_content=DAF_fOURT2g&utm_campaign=designshare&utm_medium=link&utm_source=editor" target="_blank"> <button
         style={style}
         className="hero_btn"
         onMouseOver={herobtn_over}
